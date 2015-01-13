@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="167da5c532d34f97860478c0f6f7c39c" Name="Diagrama1">
+        <EntityTypeShape EntityType="dbtransvalleModel.bus" Width="1.5" PointX="5.25" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.coordenadasruta" Width="1.5" PointX="10.5" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.documentos" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.documentos_has_bus" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.fallasreportadas" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.gastos" Width="1.5" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.historialmovimiento" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.perfil" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.persona" Width="1.5" PointX="8.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.persona_has_documentos" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.planillacontrol" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.planillarecaudo" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.puntoscontrol" Width="1.5" PointX="6" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.recorrido" Width="1.5" PointX="5.25" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.ruta" Width="1.5" PointX="8.25" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.tallas" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.tarjetadespacho" Width="1.5" PointX="3" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.transvalle" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbtransvalleModel.usuario" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="dbtransvalleModel.fk_Bus_PlanillaControl1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.fk_Bus_PlanillaRecaudo1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.fk_Bus_Transvalle1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.fk_Bus_Usuario1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.fk_CordenadasRuta_Ruta1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.fk_Documentos_has_Bus_Documentos1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.fk_Persona_has_Documentos_Documentos1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.fk_Gastos_PlanillaRecaudo1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.fk_Perfil_Usuario1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.fk_Persona_Transvalle1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.fk_Persona_Usuario1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.fk_PlanillaControl_PlanillaRecaudo" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.fk_Recorrido_PlanillaControl1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.fk_Recorrido_TarjetaDespacho1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.planillacontrol_has_ruta" ManuallyRouted="false" />
+        <AssociationConnector Association="dbtransvalleModel.ruta_has_puntoscontrol" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

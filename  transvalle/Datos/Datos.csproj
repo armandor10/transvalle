@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C6E1703-0900-4250-88C6-26FB110C6443}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Datos</RootNamespace>
+    <AssemblyName>Datos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bus.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="coordenadasruta.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="documentos.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="documentos_has_bus.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fallasreportadas.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gastos.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="historialmovimiento.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="perfil.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="persona.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="persona_has_documentos.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="planillacontrol.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="planillarecaudo.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="puntoscontrol.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="recorrido.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ruta.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tallas.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tarjetadespacho.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Transvalle.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transvalle.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="transvalle.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Transvalle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transvalle.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Transvalle1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usuario.cs">
+      <DependentUpon>Transvalle.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Transvalle.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Transvalle.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="Transvalle.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Transvalle.edmx</DependentUpon>
+      <LastGenOutput>Transvalle.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Transvalle.edmx.diagram">
+      <DependentUpon>Transvalle.edmx</DependentUpon>
+    </None>
+    <None Include="Transvalle.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Transvalle.edmx</DependentUpon>
+      <LastGenOutput>Transvalle1.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
