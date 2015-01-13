@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transvalle", "Transvalle\Transvalle.csproj", "{0BD6CF3D-2CB1-4AA0-8A98-7BC96164FFE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{00A4AA6A-4B17-48D6-A620-E34DDFA03945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{6C6E1703-0900-4250-88C6-26FB110C6443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{3B091416-9DC9-4544-8066-8FE9C36919EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BD6CF3D-2CB1-4AA0-8A98-7BC96164FFE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BD6CF3D-2CB1-4AA0-8A98-7BC96164FFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BD6CF3D-2CB1-4AA0-8A98-7BC96164FFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BD6CF3D-2CB1-4AA0-8A98-7BC96164FFE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00A4AA6A-4B17-48D6-A620-E34DDFA03945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00A4AA6A-4B17-48D6-A620-E34DDFA03945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00A4AA6A-4B17-48D6-A620-E34DDFA03945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00A4AA6A-4B17-48D6-A620-E34DDFA03945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C6E1703-0900-4250-88C6-26FB110C6443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C6E1703-0900-4250-88C6-26FB110C6443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C6E1703-0900-4250-88C6-26FB110C6443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C6E1703-0900-4250-88C6-26FB110C6443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B091416-9DC9-4544-8066-8FE9C36919EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B091416-9DC9-4544-8066-8FE9C36919EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B091416-9DC9-4544-8066-8FE9C36919EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B091416-9DC9-4544-8066-8FE9C36919EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
