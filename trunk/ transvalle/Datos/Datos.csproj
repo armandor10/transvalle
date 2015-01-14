@@ -52,6 +52,7 @@
     <Compile Include="coordenadasruta.cs">
       <DependentUpon>Transvalle.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAOFactory.cs" />
     <Compile Include="documentos.cs">
       <DependentUpon>Transvalle.tt</DependentUpon>
     </Compile>
@@ -67,6 +68,9 @@
     <Compile Include="historialmovimiento.cs">
       <DependentUpon>Transvalle.tt</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IPersona.cs" />
+    <Compile Include="MySqlFactory.cs" />
+    <Compile Include="MySql\MySqlPersonaDAO.cs" />
     <Compile Include="perfil.cs">
       <DependentUpon>Transvalle.tt</DependentUpon>
     </Compile>
@@ -145,6 +149,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{3b091416-9dc9-4544-8066-8fe9c36919ef}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
