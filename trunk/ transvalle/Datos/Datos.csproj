@@ -31,7 +31,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.9.5\lib\net40\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data.entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entities.6.8.3.0\lib\net40\mysql.data.entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Fabric.Plugin">
+      <HintPath>..\packages\MySql.Fabric.6.9.5\lib\net40\MySql.Fabric.Plugin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -47,105 +60,99 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bus.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="coordenadasruta.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
-    <Compile Include="DAOFactory.cs" />
     <Compile Include="documentos.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="documentos_has_bus.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="fallasreportadas.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="gastos.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="historialmovimiento.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\IPersona.cs" />
-    <Compile Include="MySqlFactory.cs" />
-    <Compile Include="MySql\MySqlPersonaDAO.cs" />
+    <Compile Include="ModelTransValle.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTransValle.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelTransValle.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelTransValle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTransValle.edmx</DependentUpon>
+    </Compile>
     <Compile Include="perfil.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="persona.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="persona_has_documentos.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="planillacontrol.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="planillarecaudo.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="puntoscontrol.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="recorrido.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="ruta.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="tallas.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="tarjetadespacho.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Transvalle.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Transvalle.Context.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="transvalle.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Transvalle.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Transvalle.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Transvalle1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
     <Compile Include="usuario.cs">
-      <DependentUpon>Transvalle.tt</DependentUpon>
+      <DependentUpon>ModelTransValle.tt</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EntityDeploy Include="Transvalle.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Transvalle.Designer.cs</LastGenOutput>
-    </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
+    <EntityDeploy Include="ModelTransValle.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelTransValle.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelTransValle.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelTransValle.edmx</DependentUpon>
+      <LastGenOutput>ModelTransValle.Context.cs</LastGenOutput>
+    </None>
+    <None Include="ModelTransValle.edmx.diagram">
+      <DependentUpon>ModelTransValle.edmx</DependentUpon>
+    </None>
+    <None Include="ModelTransValle.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelTransValle.edmx</DependentUpon>
+      <LastGenOutput>ModelTransValle.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
-    <None Include="Transvalle.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Transvalle.edmx</DependentUpon>
-      <LastGenOutput>Transvalle.Context.cs</LastGenOutput>
-    </None>
-    <None Include="Transvalle.edmx.diagram">
-      <DependentUpon>Transvalle.edmx</DependentUpon>
-    </None>
-    <None Include="Transvalle.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Transvalle.edmx</DependentUpon>
-      <LastGenOutput>Transvalle1.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

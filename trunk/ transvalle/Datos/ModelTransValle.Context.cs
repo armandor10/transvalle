@@ -13,10 +13,10 @@ namespace Datos
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class dbtransvalleEntities : DbContext
+    public partial class dbtransvalleEntitie : DbContext
     {
-        public dbtransvalleEntities()
-            : base("name=dbtransvalleEntities")
+        public dbtransvalleEntitie()
+            : base("name=dbtransvalleEntitie")
         {
         }
     

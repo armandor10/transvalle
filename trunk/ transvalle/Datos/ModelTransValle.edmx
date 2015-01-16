@@ -612,7 +612,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="dbtransvalleModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
-        <EntityContainer Name="dbtransvalleEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="dbtransvalleEntitie" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="bus" EntityType="dbtransvalleModel.bus" />
           <EntitySet Name="coordenadasruta" EntityType="dbtransvalleModel.coordenadasruta" />
           <EntitySet Name="documentos" EntityType="dbtransvalleModel.documentos" />
@@ -1138,7 +1138,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="dbtransvalleModelStoreContainer" CdmEntityContainer="dbtransvalleEntities">
+        <EntityContainerMapping StorageEntityContainer="dbtransvalleModelStoreContainer" CdmEntityContainer="dbtransvalleEntitie">
           <EntitySetMapping Name="bus">
             <EntityTypeMapping TypeName="dbtransvalleModel.bus">
               <MappingFragment StoreEntitySet="bus">
